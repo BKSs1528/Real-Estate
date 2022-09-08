@@ -88,7 +88,7 @@ const propSchema = new mongoose.Schema({
     },
     DaysLeft:{
         type:Number,
-        // required:true
+        
     },
     SaleType:{
         type:String,
