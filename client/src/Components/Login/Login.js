@@ -20,7 +20,7 @@ const Login =()=>{
     function handlelogin(e){
         e.preventDefault();
         axios({
-            url:"https://server-realestate-10x.herokuapp.com/login/login",
+            url:"https://server-10x-realestate.herokuapp.com/login/login",
             method:"POST",
             headers :{
 

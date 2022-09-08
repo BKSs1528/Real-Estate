@@ -25,7 +25,7 @@ function ListProp(){
     }
 
     useEffect(()=>{
-        fetch("https://server-realestate-10x.herokuapp.com/viewProperty/view",{method :"GET",headers:{authorization: authToken}})
+        fetch("https://server-10x-realestate.herokuapp.com/viewProperty/view",{method :"GET",headers:{authorization: authToken}})
         .then((res)=>{
             return res.json();
         }).then((uData)=>{

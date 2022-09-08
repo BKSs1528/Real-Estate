@@ -8,7 +8,7 @@ const Property = ()=> {
      const [uData, setUData] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-    fetch("https://server-realestate-10x.herokuapp.com/logout/done", { method: "GET", headers: { authorization: authToken } })
+    fetch("https://server-10x-realestate.herokuapp.com/logout/done", { method: "GET", headers: { authorization: authToken } })
 
       .then((data) => {
         return data.json();

@@ -25,7 +25,7 @@ const StepContext = () =>{
 		else
 		{
 		axios({
-			url:"https://server-realestate-10x.herokuapp.com/addProperty/addprop",
+			url:"https://server-10x-realestate.herokuapp.com/addProperty/addprop",
 			method:"POST",
 			headers:{
 				authorization: authToken
