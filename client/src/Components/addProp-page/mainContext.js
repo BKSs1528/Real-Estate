@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
-import AddProperty from './addProperty';
+import AddProperty from "./AddProperty"
 import "./common.css";
 import {useNavigate} from "react-router-dom"; 
 import axios from "axios";
@@ -25,7 +25,7 @@ const StepContext = () =>{
 		else
 		{
 		axios({
-			url:"https://server-realestate-10x.herokuapp.com/addProperty/addprop",
+			url:"http://localhost:3001/addProperty/addprop",
 			method:"POST",
 			headers:{
 				authorization: authToken

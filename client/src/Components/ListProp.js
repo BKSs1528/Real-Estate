@@ -1,6 +1,6 @@
 import "./listproperty.css"
-import Header from "./header"
-import SideContent from "./sideContent"
+import Header from "./Header"
+import SideContent from "./SideContent";
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -25,7 +25,7 @@ function ListProp(){
     }
 
     useEffect(()=>{
-        fetch("https://server-realestate-10x.herokuapp.com/viewProperty/view",{method :"GET",headers:{authorization: authToken}})
+        fetch("http://localhost:3001/viewProperty/view",{method :"GET",headers:{authorization: authToken}})
         .then((res)=>{
             return res.json();
         }).then((uData)=>{

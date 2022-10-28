@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
 import {Stepper, StepLabel, Step} from "@material-ui/core";
-import BasicInfo from './basicInfo';
-import PropertyDetails from './propDetails';
-import GeneralInfo from './generalInfo';
-import LocationInfo from './locationInfo';
-import Header from "../header";
-import SideContent from "../sideContent"
+import BasicInfo from "./BasicInfo"
+import PropertyDetails from "./PropertyDetails"
+import GeneralInfo from "./GeneralInfo"
+import LocationInfo from "./LocationInfo"
+import Header from "../Header";
+import SideContent from '../SideContent';
 import "./common.css";
 import { multiStepContext } from './mainContext';
 

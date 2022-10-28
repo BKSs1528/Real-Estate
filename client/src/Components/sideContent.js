@@ -3,8 +3,8 @@ import "./sideContent.css";
 
 function SideContent(){
     return(
-    <div class = "side">
-        <div class="sideBar">
+    <div className= "side">
+        <div className="sideBar">
             <div className = "container1">
                 <div>
                     <div>

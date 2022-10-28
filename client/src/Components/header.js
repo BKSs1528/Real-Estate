@@ -11,7 +11,7 @@ function Header(){
     const [data, setData] = useState([]);
 
     useEffect(()=>{
-        fetch("https://server-realestate-10x.herokuapp.com/logout/done",{method:"GET",headers:{authorization:authToken}})
+        fetch("http://localhost:3001/logout/done",{method:"GET",headers:{authorization:authToken}})
         .then((res)=>{
             return res.json();
         }).then((uData)=>{
@@ -29,13 +29,13 @@ function Header(){
     }
 
     return(
-        <div class = "headPage">
-            <div class ="header">
+        <div className = "headPage">
+            <div className ="header">
                 {data.map((user, i)=>{
 
                     return(
                         <div>
-                            <div class = "heading">
+                            <div className = "heading">
                                 {/* <Nav>
                                     <AiOutlineUser className="icon"/>
                                     <NavDropdown title="User">

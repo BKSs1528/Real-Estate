@@ -100,8 +100,6 @@ const LocationInfo = () => {
             </div>
 
             <div className="PT">
-
-
                 <div >
 
                     <label className="inputtxt" >Latitude</label>

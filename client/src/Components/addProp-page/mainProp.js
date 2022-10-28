@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from "react";
 import StepContext from "./mainContext";
-import AddProperty from "./addProperty";
+import AddProperty from "./AddProperty";
 import {useNavigate} from "react-router-dom";
 
 const Property = ()=> {
@@ -8,7 +8,7 @@ const Property = ()=> {
      const [uData, setUData] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-    fetch("https://server-realestate-10x.herokuapp.com/logout/done", { method: "GET", headers: { authorization: authToken } })
+    fetch("http://localhost:3001/logout/done", { method: "GET", headers: { authorization: authToken } })
 
       .then((data) => {
         return data.json();
@@ -22,7 +22,7 @@ return(
           <StepContext>
             <AddProperty/>
           </StepContext>
-  </div>
+    </div>
 )
 
 }

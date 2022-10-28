@@ -2,7 +2,7 @@ import React from "react";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
 import {Routes,Route,BrowserRouter} from "react-router-dom"
-import ListProp from "./Components/listproperty";
+import ListProp from "./Components/ListProp";
 import Property from "./Components/addProp-page/mainProp";
 function App() {
   return(
