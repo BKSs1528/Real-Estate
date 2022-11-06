@@ -1,10 +1,17 @@
-var reorderLogFiles = function(logs) {
-    for(let k of logs){
-        k.sort()
-    }
-    return logs
-};
+const express = require("express")
+const app = express()
 
-let logs = ["dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"]
+const middleWare=(req,res,next)=>{
+    console.log("hello balakishore");
+    next()
+}
 
-console.log(reorderLogFiles(logs));
+app.get("/",(req,res)=>{
+    res.send("home page")
+})
+
+app.get("/about",middleWare,(req,res)=>{
+    res.send("about page")
+})
+
+app.listen(3002)

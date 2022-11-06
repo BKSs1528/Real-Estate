@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const userModel = require("../models/userSchema");
-const propModel = require("../models/propSchema");
+// const propModel = require("../models/propSchema");
 
 const dotenv = require("dotenv");
 dotenv.config();

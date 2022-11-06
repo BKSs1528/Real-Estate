@@ -37,9 +37,9 @@ App.listen(process.env.PORT || 3001,(err)=>{
 
 
 
-App.get("/",(req,res)=>{
-    res.send("Home Page")
-});
+// App.get("/",(req,res)=>{
+//     res.send("Home Page")
+// });
 
 App.use("/signup",signupController);
 App.use("/login",loginController);
