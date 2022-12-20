@@ -32,9 +32,7 @@ const SignUp = () => {
             axios({
                 url: "http://localhost:3001/signup/reg",
                 method: "POST",
-                headers: {
-
-                },
+                headers: {},
                 data: data
             }).then((res) => {
                 navigate("/");

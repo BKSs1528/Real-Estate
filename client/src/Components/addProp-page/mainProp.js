@@ -10,6 +10,7 @@ const Property = ()=> {
     useEffect(() => {
     fetch("http://localhost:3001/logout/done", { method: "GET", headers: { authorization: authToken } })
 
+
       .then((data) => {
         return data.json();
 

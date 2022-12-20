@@ -22,9 +22,7 @@ const Login =()=>{
         axios({
             url:"http://localhost:3001/login/login",
             method:"POST",
-            headers :{
-
-            },
+            headers :{},
             data:data
         }).then((res)=>{
             localStorage.setItem("authorization", res.data.authToken);

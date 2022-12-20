@@ -26,6 +26,7 @@ function ListProp(){
 
     useEffect(()=>{
         fetch("http://localhost:3001/viewProperty/view",{method :"GET",headers:{authorization: authToken}})
+
         .then((res)=>{
             return res.json();
         }).then((uData)=>{

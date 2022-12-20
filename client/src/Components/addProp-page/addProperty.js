@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import {Stepper, StepLabel, Step} from "@material-ui/core";
+import React, { useContext } from 'react';
+import { Stepper, StepLabel, Step } from "@material-ui/core";
 import BasicInfo from "./BasicInfo"
 import PropertyDetails from "./PropertyDetails"
 import GeneralInfo from "./GeneralInfo"
@@ -9,41 +9,41 @@ import SideContent from '../SideContent';
 import "./common.css";
 import { multiStepContext } from './mainContext';
 
-const AddProperty = () => {	
-	const {currentStep, finalData} = useContext(multiStepContext);
+const AddProperty = () => {
+	const { currentStep, finalData } = useContext(multiStepContext);
 
-	function showStep(step){
-		switch(step){
+	function showStep(step) {
+		switch (step) {
 			case 1:
-			return <BasicInfo/>
+				return <BasicInfo />
 			case 2:
-			return <PropertyDetails/>
+				return <PropertyDetails />
 			case 3:
-			return <GeneralInfo/>
+				return <GeneralInfo />
 			case 4:
-			return <LocationInfo/>
+				return <LocationInfo />
 		}
 	}
-	return(
+	return (
 		<div>
-		<SideContent/>
-		<Header/>
+			<SideContent />
+			<Header />
 			<h2 className="h3">Add New Property</h2>
 			<div className="steps">
-			<Stepper activeStep={currentStep-1} orientation="horizontal">
-				<Step className="step2">
-					<StepLabel>Basic Info</StepLabel>
-				</Step>
-				<Step className="step1">
-					<StepLabel>Property Details</StepLabel>
-				</Step>
-				<Step className="step1">
-					<StepLabel>General Info</StepLabel>
-				</Step>
-				<Step className="step1">
-					<StepLabel>Location Info</StepLabel>
-				</Step>
-			</Stepper>
+				<Stepper activeStep={currentStep - 1} orientation="horizontal">
+					<Step className="step2">
+						<StepLabel>Basic Info</StepLabel>
+					</Step>
+					<Step className="step1">
+						<StepLabel>Property Details</StepLabel>
+					</Step>
+					<Step className="step1">
+						<StepLabel>General Info</StepLabel>
+					</Step>
+					<Step className="step1">
+						<StepLabel>Location Info</StepLabel>
+					</Step>
+				</Stepper>
 			</div>
 			{showStep(currentStep)}
 		</div>

@@ -18,11 +18,11 @@ router.post("/login",(req,res)=>{
                     res.status(200).send({authToken});
                 }
                 else{
-                    res.send(400).json("Invalid Password");
+                    res.status(400).json("Invalid Password");
                 }
             })
         }else{
-            res.send(400).json("Invalid Password");
+            res.status(400).json("Invalid Password");
         }
     })
 });

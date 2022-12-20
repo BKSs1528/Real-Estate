@@ -18,7 +18,7 @@ router.get("/view",async(req,res)=>{
                 })
             }else{
                 res.status(400).json("Invalid user");
-            }
+            }   //
         })
     }catch(err){
         res.status(400).json(err);
